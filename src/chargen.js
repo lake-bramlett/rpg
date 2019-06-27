@@ -4,6 +4,7 @@ export class Player {
     this.age = age;
     this.race = race;
     this.charClass = charClass;
+    this.level = 1;
     this.attr = {
       wis: 8,
       con: 8,
@@ -62,5 +63,15 @@ export class Player {
       };
 
       this.hp = (this.attr.con * 2);
+  };
+
+  attackRoll() {
+    let attackVal = Math.ceil(Math.random() *  13);
+     console.log('attack initiated');
+
+     if(attackVal >= monster.ac) {
+       console.log('attack successful');
+       monster.hp -= this.attr.str;
+    }
   };
 };

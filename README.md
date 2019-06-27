@@ -1,6 +1,6 @@
 Specs
 
-| Spec | Intput | Output |
+| Spec | Input | Output |
 |  ------  | :-----:   |  -----:  |
 | Display user input as character name | Bill | Name: Bill |
 | Display user input as character age | 27 | Age: 27 |
